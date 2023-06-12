@@ -66,6 +66,15 @@ void ExibirTituloDaOpcao(string titulo)
     Console.WriteLine(asteristico + "\n");
 }
 
+//Qualquer tecla para voltar ao menu anterior
+void TeclaVoltar()
+{
+    Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
+    Console.ReadKey();
+    Console.Clear();
+    ExibirOpcoesDoMenu();
+}
+
 //Opção1
 void RegistrarBanda()
 {
@@ -84,7 +93,7 @@ void MostrarBandasRegistradas()
 {
 
     ExibirTituloDaOpcao("Exibindo todas as bandas registradas");
-        
+
     /*for (int i = 0; i < listaDasBandas.Count; i++)
     {
         Console.WriteLine($"Banda: {listaDasBandas[i]}");
@@ -95,12 +104,8 @@ void MostrarBandasRegistradas()
         Console.WriteLine($"Banda: {banda}");
     }
 
-    Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
-    Console.ReadKey();
-    Console.Clear();
-    ExibirOpcoesDoMenu();
+    TeclaVoltar();
 }
-
 
 //Opção 3
 void AvaliarUmaBanda()
@@ -116,10 +121,7 @@ void AvaliarUmaBanda()
     } else
     {
         Console.WriteLine($"\nA banda {nomeDaBanda} não foi encontrada!");
-        Console.WriteLine("Digite uma tecla para voltar ao menu principal.");
-        Console.ReadKey();
-        Console.Clear();
-        ExibirOpcoesDoMenu();
+        TeclaVoltar();
     }
 
     //se a banda existir no dicionario >> atribuir uma nota
