@@ -5,8 +5,6 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScreenSound", "ScreenSound\ScreenSound.csproj", "{B9B722F4-3ED1-4421-8BDE-60FCDC73073A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Random", "Random\Random.csproj", "{5445F410-039F-4283-B5A2-C88102B5FC7E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{E2A9797A-1C6F-4BC3-B0C7-F82ACC25F2B5}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
@@ -22,10 +20,6 @@ Global
 		{B9B722F4-3ED1-4421-8BDE-60FCDC73073A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9B722F4-3ED1-4421-8BDE-60FCDC73073A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9B722F4-3ED1-4421-8BDE-60FCDC73073A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5445F410-039F-4283-B5A2-C88102B5FC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5445F410-039F-4283-B5A2-C88102B5FC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5445F410-039F-4283-B5A2-C88102B5FC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5445F410-039F-4283-B5A2-C88102B5FC7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
