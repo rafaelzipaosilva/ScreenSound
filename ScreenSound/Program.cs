@@ -1,7 +1,10 @@
 ﻿//Screen Sound
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
-List<string> listaDasBandas = new List<string> { "U2","The Beatles","Calypso"};
+//List<string> listaDasBandas = new List<string> { "U2","The Beatles","Calypso"};
 
+Dictionary<string,List<int>> bandasRegistradas = new Dictionary<string,List<int>>();
+
+//Exibir logo
 void ExibirLogo()
 {
     //feito no https://fsymbols.com/pt/geradores/
@@ -16,6 +19,7 @@ void ExibirLogo()
     Console.WriteLine(mensagemDeBoasVindas);
 }
 
+//Exibir o menu
 void ExibirOpcoesDoMenu()
 {
     ExibirLogo();
@@ -46,6 +50,18 @@ void ExibirOpcoesDoMenu()
     }
 }
 
+//Titulo das opções
+void ExibirTituloDaOpcao(string titulo)
+{
+    Console.Clear();
+    int quantidadeDeLetras = titulo.Length;
+    string asteristico = string.Empty.PadLeft(quantidadeDeLetras, '*');
+    Console.WriteLine(asteristico);
+    Console.WriteLine(titulo);
+    Console.WriteLine(asteristico + "\n");
+}
+
+//Opção1
 void RegistrarBanda()
 {
     ExibirTituloDaOpcao("Registro das bandas");
@@ -58,6 +74,7 @@ void RegistrarBanda()
     ExibirOpcoesDoMenu();
 }
 
+//Opção 2
 void MostrarBandasRegistradas()
 {
 
@@ -77,16 +94,6 @@ void MostrarBandasRegistradas()
     Console.ReadKey();
     Console.Clear();
     ExibirOpcoesDoMenu();
-}
-
-void ExibirTituloDaOpcao(string titulo)
-{
-    Console.Clear();
-    int quantidadeDeLetras = titulo.Length;
-    string asteristico = string.Empty.PadLeft(quantidadeDeLetras, '*');
-    Console.WriteLine(asteristico);
-    Console.WriteLine(titulo);
-    Console.WriteLine(asteristico + "\n");
 }
 
 ExibirOpcoesDoMenu();
