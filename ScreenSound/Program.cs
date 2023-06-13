@@ -137,7 +137,7 @@ void AvaliarUmaBanda()
 //Opção 4
 void MediaDeUmaBanda()
 {
-    ExibirTituloDaOpcao("Média de nota");
+    ExibirTituloDaOpcao("Exibir média da banda");
 
     //Perguntar qual é o nome da banda
     Console.Write("Digite o nome da banda que deseja saber a média: ");
@@ -146,7 +146,10 @@ void MediaDeUmaBanda()
     //consultar se a banda está inserida no dicionario da aplicação
     if (bandasRegistradas.ContainsKey(nomeDaBanda))
     {
-        if (bandasRegistradas[nomeDaBanda].Count == 0)
+
+        List<int> notasDaBanda = bandasRegistradas[nomeDaBanda];
+
+        if (notasDaBanda.Count == 0)
         {
             //verifica se a bada possui notas registradas    
             Console.WriteLine($"\nA banda {nomeDaBanda} não possui nenhuma nota registrada!");
@@ -155,18 +158,7 @@ void MediaDeUmaBanda()
         else
         {
             //Realizar o cálculo da média e exibir o resultado
-            int nota = 0;
-            int registros = bandasRegistradas[nomeDaBanda].Count;
-            for (int i = 0; i < registros; i++)
-            {
-                nota += bandasRegistradas[nomeDaBanda][i];
-            }
-
-            Double media = nota / registros;
-
-            Console.Write($"A banda {nomeDaBanda} obteve {registros} avaliações. \nA noma média é de {media}");
-
-
+            Console.WriteLine($"A banda {nomeDaBanda} obteve {notasDaBanda.Count} avaliações. \nA noma média é de {notasDaBanda.Average()}");
             Thread.Sleep(4000);
             Console.Clear();
             ExibirOpcoesDoMenu();
