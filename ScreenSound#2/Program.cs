@@ -1,0 +1,4 @@
+﻿//nome
+//artista
+//duração
+//disponíuvel
