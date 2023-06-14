@@ -3,6 +3,7 @@ musica1.Nome = "Roxane";
 musica1.Artista = "The Police";
 musica1.Duracao = 273;
 musica1.Disponivel = true;
+Console.WriteLine(musica1.DescricaoResumida);
 
 Musica musica2 = new Musica();
 musica2.Nome = "Vertigo";

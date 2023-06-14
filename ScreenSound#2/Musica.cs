@@ -4,17 +4,24 @@
     public string Artista { get; set; }
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
-    public string NomeCompleto { get; set; }
+    public string DescricaoResumida
+    {
+        get
+        {
+            return $"A música {Nome} pertence à banda {Artista}";
+        }
+    }
 
     public void ExibirFichaTecnica()
     {
-        Console.WriteLine(  $"Nome: {Nome}" +
+        Console.WriteLine($"Nome: {Nome}" +
                             $"\nArtista: {Artista}" +
                             $"\nDuração: {Duracao}");
         if (Disponivel)
         {
             Console.WriteLine("Disponível no plano. \n");
-        } else
+        }
+        else
         {
             Console.WriteLine("Adquirir o plano Plus+ \n");
         }
