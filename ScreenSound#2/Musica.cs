@@ -7,15 +7,18 @@
 
     public void ExibirFichaTecnica()
     {
-        Console.WriteLine($"Nome: {nome}");
-        Console.WriteLine($"Artista: {artista}");
-        Console.WriteLine($"Duração: {duracao}");
+        Console.WriteLine($"Nome: {nome} \nArtista: {artista} \nDuração: {duracao}");
         if (disponivel)
         {
-            Console.WriteLine("Disponível no plano.");
+            Console.WriteLine("Disponível no plano. \n");
         } else
         {
-            Console.WriteLine("Adquiri o plano Plus+");
+            Console.WriteLine("Adquirir o plano Plus+ \n");
         }
+    }
+
+    public void ExibirNomeEArtista()
+    {
+        Console.WriteLine($"Nome/Artista: {nome} - {artista}");
     }
 }
