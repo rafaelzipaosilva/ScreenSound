@@ -5,6 +5,16 @@
     public int duracao;
     private bool disponivel;
 
+    public void EscreveDisponivel(bool value)
+    {
+        disponivel = value;
+    }
+
+    public bool LeDisponivel()
+    {
+        return disponivel;
+    }
+
     public void ExibirFichaTecnica()
     {
         Console.WriteLine($"Nome: {nome} \nArtista: {artista} \nDuração: {duracao}");
@@ -15,10 +25,5 @@
         {
             Console.WriteLine("Adquirir o plano Plus+ \n");
         }
-    }
-
-    public void ExibirNomeEArtista()
-    {
-        Console.WriteLine($"Nome/Artista: {nome} - {artista}");
     }
 }
