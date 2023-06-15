@@ -12,7 +12,11 @@ musica2.Duracao = 204;
 albumDoLegiaoUrbana.AdicionarMusica(musica1);
 albumDoLegiaoUrbana.AdicionarMusica(musica2);
 
-albumDoLegiaoUrbana.ExibirMusicasDoAlbum();
+Banda legiaoUrbana = new Banda();
+legiaoUrbana.Nome = "Legião Urbana";
+legiaoUrbana.AdicionarAlbum(albumDoLegiaoUrbana);
+legiaoUrbana.ExibirDiscografia();
+
 
 
 /*Musica musica1 = new Musica();
