@@ -1,4 +1,19 @@
-﻿Musica musica1 = new Musica();
+﻿Album albumDoLegiaoUrbana = new Album();
+albumDoLegiaoUrbana.Nome = "As quatro estações";
+
+Musica musica1 = new Musica();
+musica1.Nome = "Monte castelo";
+
+Musica musica2 = new Musica();
+musica2.Nome = "Tempo perdido";
+
+albumDoLegiaoUrbana.AdicionarMusica(musica1);
+albumDoLegiaoUrbana.AdicionarMusica(musica2);
+
+
+
+
+/*Musica musica1 = new Musica();
 musica1.Nome = "Roxane";
 musica1.Artista = "The Police";
 musica1.Duracao = 273;
@@ -12,4 +27,4 @@ musica2.Duracao = 367;
 musica2.Disponivel = false;
 
 musica1.ExibirFichaTecnica();
-musica2.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();*/
