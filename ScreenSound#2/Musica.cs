@@ -4,13 +4,10 @@
     public string Artista { get; set; }
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
-    public string DescricaoResumida
-    {
-        get
-        {
-            return $"A música {Nome} pertence à banda {Artista}";
-        }
-    }
+    
+    //manipulando a prop get através de uma Função Lambda (Arrow Function)
+    public string DescricaoResumida =>
+        $"A música {Nome} pertence à banda {Artista}";
 
     public void ExibirFichaTecnica()
     {
