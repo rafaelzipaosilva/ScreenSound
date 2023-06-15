@@ -3,14 +3,16 @@ albumDoLegiaoUrbana.Nome = "As quatro estações";
 
 Musica musica1 = new Musica();
 musica1.Nome = "Monte castelo";
+musica1.Duracao = 231;
 
 Musica musica2 = new Musica();
-musica2.Nome = "Tempo perdido";
+musica2.Nome = "Meninos e meninas";
+musica2.Duracao = 204;
 
 albumDoLegiaoUrbana.AdicionarMusica(musica1);
 albumDoLegiaoUrbana.AdicionarMusica(musica2);
 
-
+albumDoLegiaoUrbana.ExibirMusicasDoAlbum();
 
 
 /*Musica musica1 = new Musica();
