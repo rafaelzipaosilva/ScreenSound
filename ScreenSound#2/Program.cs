@@ -1,11 +1,14 @@
-﻿Album albumDoLegiaoUrbana = new Album();
+﻿Banda legiaoUrbana = new Banda();
+legiaoUrbana.Nome = "Legião Urbana";
+
+Album albumDoLegiaoUrbana = new Album();
 albumDoLegiaoUrbana.Nome = "As quatro estações";
 
-Musica musica1 = new Musica();
+Musica musica1 = new Musica(legiaoUrbana);
 musica1.Nome = "Monte castelo";
 musica1.Duracao = 231;
 
-Musica musica2 = new Musica();
+Musica musica2 = new Musica(legiaoUrbana);
 musica2.Nome = "Meninos e meninas";
 musica2.Duracao = 204;
 
@@ -13,6 +16,10 @@ albumDoLegiaoUrbana.AdicionarMusica(musica1);
 albumDoLegiaoUrbana.AdicionarMusica(musica2);
 
 albumDoLegiaoUrbana.ExibirMusicasDoAlbum();
+
+legiaoUrbana.AdicionarAlbum(albumDoLegiaoUrbana);
+legiaoUrbana.ExibirDiscografia();
+
 
 
 /*Musica musica1 = new Musica();
