@@ -4,6 +4,7 @@
     public string Artista { get; set; }
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
+    public Genero Genero { get; set; }
     
     //manipulando a prop get através de uma Função Lambda (Arrow Function)
     public string DescricaoResumida =>
